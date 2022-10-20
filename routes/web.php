@@ -21,6 +21,9 @@ use App\Models\TherapistInfo;
 |
 */
 
+Route::get('/', function () {
+  return view('home');
+});
 
 Route::get('/', function () {
     $posts = TherapistInfo::all();
